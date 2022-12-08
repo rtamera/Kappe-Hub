@@ -21,13 +21,13 @@
         android:layout_height="110dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Welcome back, brew!"
+        android:textColor="#000000"
         android:textSize="40sp" />
 
     <TextView
         android:id="@+id/slogan_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
         android:text="Sign-in to continue"
         android:textSize="18sp" />
 
