@@ -7,7 +7,8 @@
     android:background="#fff"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Registration">
+    tools:context=".Registration"
+    >
 
 <!--    Logo-->
     <ImageView
@@ -128,8 +129,9 @@
     
 <!--    Already have an account?-->
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/login_screen"
 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00000000"
         android:text="Have an account? Sign in"
