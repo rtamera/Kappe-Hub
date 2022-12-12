@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class Login extends AppCompatActivity {
-
+    Button callPoints;
     Button callSignUp;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -25,6 +25,16 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this,Registration.class);
+                startActivity(intent);
+            }
+        });
+
+        callPoints = findViewById(R.id.coolBeans);
+
+        callPoints.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this,QRScanner.class);
                 startActivity(intent);
             }
         });
