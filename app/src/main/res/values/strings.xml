@@ -14,23 +14,23 @@
         <item>Mr. White</item>
         <item>Cafe Krema Nero</item>
         <item>Eucalyptus Cafe</item>
-        <item>Foam Coffee</item>
-        <item>Seollem Cafe</item>
+<!--        <item>Foam Coffee</item>-->
+<!--        <item>Seollem Cafe</item>-->
     </string-array>
     
     <string-array name="time">
         <item>8:00–12:00</item>
         <item>8:00–12:00</item>
         <item>8:00–12:00</item>
-        <item>8:00–12:00</item>
-        <item>8:00–12:00</item>
+<!--        <item>8:00–12:00</item>-->
+<!--        <item>8:00–12:00</item>-->
     </string-array>
 
     <string-array name="rating">
         <item>1/5</item>
         <item>1/5</item>
         <item>1/5</item>
-        <item>1/5</item>
-        <item>1/5</item>
+<!--        <item>1/5</item>-->
+<!--        <item>1/5</item>-->
     </string-array>
 </resources>

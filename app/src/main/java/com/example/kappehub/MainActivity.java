@@ -24,34 +24,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
-        //Animations
-        topAnim = AnimationUtils.loadAnimation(this,R.anim.top_anim);
-        bottomAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_anim);
-
-        //Hooks
-        image = findViewById(R.id.logo);
-        topLine = findViewById(R.id.topLogoLine);
-        bottomLine = findViewById(R.id.bottomLogoLine);
-        slogan = findViewById(R.id.slogan);
-
-        image.setAnimation(topAnim);
-        topLine.setAnimation(bottomAnim);
-        bottomLine.setAnimation(bottomAnim);
-        bottomLine.setAnimation(bottomAnim);
-        slogan.setAnimation(bottomAnim);
-
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this,Login.class);
-                startActivity(intent);
-                finish();
-            }
-        }, SPLASH_SCREEN);
+//        //Animations
+//        topAnim = AnimationUtils.loadAnimation(this,R.anim.top_anim);
+//        bottomAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_anim);
+//
+//        //Hooks
+//        image = findViewById(R.id.logo);
+//        topLine = findViewById(R.id.topLogoLine);
+//        bottomLine = findViewById(R.id.bottomLogoLine);
+//        slogan = findViewById(R.id.slogan);
+//
+//        image.setAnimation(topAnim);
+//        topLine.setAnimation(bottomAnim);
+//        bottomLine.setAnimation(bottomAnim);
+//        bottomLine.setAnimation(bottomAnim);
+//        slogan.setAnimation(bottomAnim);
+//
+//
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Intent intent = new Intent(MainActivity.this,Login.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        }, SPLASH_SCREEN);
+//    }
     }
-
 
 }
