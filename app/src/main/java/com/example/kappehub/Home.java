@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
     ArrayList<CafeModel> cafeModels = new ArrayList<>();
-    int[] cafeImages ={R.drawable.ic_baseline_boy_24, R.drawable.ic_baseline_coffee_24,R.drawable.ic_baseline_currency_exchange_24};
+    int[] cafeImages ={R.drawable.mr__white_cafe, R.drawable.cafe_krema_nero, R.drawable.flower_cafe,R.drawable.foam_coffee, R.drawable.seollem_cafe};
     Button earnPoints;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
