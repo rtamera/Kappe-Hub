@@ -79,13 +79,14 @@
 
 <!--        Cool beans button-->
         <Button
+            android:id="@+id/cool_beans"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cool beans!"
-            android:background="#000"
-            android:textColor="#fff"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:text="Cool beans!"
+            android:textColor="#fff" />
 
 <!--New user button-->
         <Button

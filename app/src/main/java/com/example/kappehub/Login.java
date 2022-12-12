@@ -12,6 +12,8 @@ import android.widget.Button;
 public class Login extends AppCompatActivity {
 
     Button callSignUp;
+    Button callHome;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,15 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this,Registration.class);
+                startActivity(intent);
+            }
+        });
+
+        callHome = findViewById(R.id.cool_beans);
+        callHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, Home.class);
                 startActivity(intent);
             }
         });
