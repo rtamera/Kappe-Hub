@@ -16,10 +16,12 @@ public class Cafe_RecyclerViewAdapter extends RecyclerView.Adapter<Cafe_Recycler
 
     Context context;
     ArrayList<CafeModel> cafeModels;
+    private final RecyclerViewInterface recyclerViewInterface;
 
-    public Cafe_RecyclerViewAdapter(Context context, ArrayList<CafeModel> cafeModels) {
+    public Cafe_RecyclerViewAdapter(Context context, ArrayList<CafeModel> cafeModels, RecyclerViewInterface recyclerViewInterface) {
         this.context = context;
         this.cafeModels = cafeModels;
+        this.recyclerViewInterface = recyclerViewInterface;
     }
 
 
@@ -28,7 +30,7 @@ public class Cafe_RecyclerViewAdapter extends RecyclerView.Adapter<Cafe_Recycler
     public Cafe_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.recycler_view_row, parent, false);
-        return new Cafe_RecyclerViewAdapter.MyViewHolder(view);
+        return new Cafe_RecyclerViewAdapter.MyViewHolder(view,  recyclerViewInterface);
     }
 
     @Override
@@ -48,12 +50,24 @@ public class Cafe_RecyclerViewAdapter extends RecyclerView.Adapter<Cafe_Recycler
         ImageView imageView;
         TextView cafeName, time, rate;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);
             cafeName = itemView.findViewById(R.id.cafeNameView);
             time = itemView.findViewById(R.id.timeTextView);
             rate = itemView.findViewById(R.id.ratingTextView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(recyclerViewInterface != null){
+                        int pos = getAdapterPosition();
+                        if(pos !=RecyclerView.NO_POSITION){
+                            recyclerViewInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 }

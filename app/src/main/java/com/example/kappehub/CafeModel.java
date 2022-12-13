@@ -5,12 +5,18 @@ public class CafeModel {
     String timing;
     String rating;
     int image;
+    String description;
+    String location;
 
-    public CafeModel(String cafeName, String timing, String rating, int image) {
+
+
+    public CafeModel(String cafeName, String timing, String rating, int image, String description, String location) {
         this.cafeName = cafeName;
         this.timing = timing;
         this.rating = rating;
         this.image = image;
+        this.description = description;
+        this.location = location;
     }
 
     public String getCafeName() {
@@ -27,5 +33,13 @@ public class CafeModel {
 
     public int getImage() {
         return image;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getLocation() {
+        return location;
     }
 }

@@ -17,7 +17,7 @@
         <item>Foam Coffee</item>
         <item>Seollem Cafe</item>
     </string-array>
-    
+
     <string-array name="time">
         <item>8:00–12:00</item>
         <item>7:00–9:00</item>
@@ -32,5 +32,21 @@
         <item>5/5</item>
         <item>4/5</item>
         <item>3/5</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>We are your friendly neighborhood cafe that serves good concept drinks and classic food</item>
+        <item>Your one stop shop for all your coffee needs</item>
+        <item>The hot and oncoming flower themed cafe!</item>
+        <item>Minimalist asian inspired specialty coffee shop in Baguio City. We serve delicious food, the best coffee and snacks</item>
+        <item>Seollem Cafe 설렘. Korean Dessert and Cafe</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>Baguio City</item>
+        <item>Baguio City</item>
+        <item>Baguio City</item>
+        <item>Baguio City</item>
+        <item>Baguio City</item>
     </string-array>
 </resources>
